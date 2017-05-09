@@ -1,0 +1,9 @@
+1、创建servlet时要在web.xml里面进行注册
+<servlet>
+    <servlet-name>HelloServlet</servlet-name>           servlet名字，与类名一样
+    <servlet-class>servlet.HelloServlet</servlet-class>	 servlet的地址，包名+类名
+</servlet>
+<servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>		servlet名字，与上面的一样
+    <url-pattern>/servlet/HelloServlet</url-pattern>    进行跳转时的url，一般是包名+类名，不过可以改成任意的。
+</servlet-mapping>
